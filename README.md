@@ -1,6 +1,8 @@
 # homepage
 A website templates for building a personal resume and portfolio page.
 
+Based on the style and page designs I created for my own portfolio site: www.maxgosselin.com
+
 ----
 
 To use this template a basic knowledge of Python and Django are required. The styles and pages are pre-made just needing you to fill in your information and make any stylistic changes you would like.
