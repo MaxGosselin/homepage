@@ -1,0 +1,378 @@
+{%  load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Django css workaround -->
+        <style>
+            .header-background{
+                background-image: url(" {% static 'resume/img/hexagons.svg' %} ");
+                background-color: #3E443F;
+                /* background-repeat: no-repeat;
+                background-size: cover; */
+            }
+        </style>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        
+        <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://overpass-30e2.kxcdn.com/overpass.css'>
+        <link rel="stylesheet" href="{% static 'resume\css\resume.css' %}">
+        
+        <script src="https://kit.fontawesome.com/248ac55434.js" crossorigin="anonymous"></script>
+
+        <title>Your Name</title>
+
+    </head>
+
+    <body>
+        <div class="page-header header-background">
+            <!-- our svg gfx are here -->
+        </div>
+        <div class="resume-wrapper">
+            <div class="resume-main">
+                <div class="container resume-container">
+                    
+                    <!-- RESUME HEADER -- PORTRAIT AND NAME  -->
+                    <div class="row">
+                        <div class="col-md-3 portrait-bin">
+                            <img src="{% static 'resume\img\user.png' %}" class="portrait">
+                        </div>
+                        <div class="col-md-9 resume-header-bg">
+                            <div class="resume-header">
+                                <h1 class="display-3 accent-text-dark trick-pad">Your Name</h1>
+                                <h3 class="accent-text-light"><small>Your industry/profession</small></h3>
+                            </div>
+                            <div class="section-header accent-text">
+                                Work and Leadership Experience
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RESUME SIDEBAR AND MAIN BODY -->
+                    <div class="row">
+                        <div class="col-md-3 resume-sidebar">
+                            <div class='sidebar-section sidebar-section-header'>
+                                Contact
+                            </div>
+                            <div class="sidebar-section sidebar-section-content">
+                                <ul class="list-unstyled text-wrap">
+                                    <li class="resume-sidebar"><i class="far fa-envelope fa-fw mr-2"></i><a class="sidebar-link" href="#">you@example.com</a></li>
+                                    <li class="resume-sidebar"><i class="fas fa-mobile-alt fa-fw mr-2"></i>+1 (555) 555-5555</li>
+                                    <li class="resume-sidebar"><i class="fab fa-linkedin-in fa-fw mr-2"></i><a class="sidebar-link" href="linkedin.com/">linkedin.com/in/you</a></li>
+                                    <li class="resume-sidebar"><i class="fab fa-github-alt fa-fw mr-2"></i><a class="sidebar-link" href="github.com/">github.com/yourgit</a></li>  
+                                </ul>
+                            </div>
+                            <div class='sidebar-section sidebar-section-header'>
+                                Education
+                            </div>
+                            <div class="sidebar-section sidebar-section-content">
+                                <ul class="list-unstyled edu-sidebar">
+                                    <li><div class="resume-sidebar font-bold"><i class="fas fa-university fa-fw mr-2"></i>University of University</div></li>
+                                    <li><div class="resume-sidebar font-italic">B.Comm: Finance ( <i class="fas fa-graduation-cap"></i> Nov. 2019)</div></li>
+                                    <li>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">Class names</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">Physics</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">21st Century Literature</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">Gastronomy</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">Economics</span></li>
+                                            
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+
+                            <div class='sidebar-section sidebar-section-header'> 
+                                Skills &amp; Tools
+                            </div>
+                            <div class="sidebar-section sidebar-section-content">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="resume-skill-name">Python</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark sidebar-progress progress-bar-striped" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="resume-skill-name">Numpy + Pandas</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark sidebar-progress progress-bar-striped" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="resume-skill-name">Excel + VBA</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark sidebar-progress progress-bar-striped" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="resume-skill-name">C/C++</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark sidebar-progress progress-bar-striped" role="progressbar" style="width: 84%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="resume-skill-name">HTML/CSS</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark sidebar-progress progress-bar-striped" role="progressbar" style="width: 78%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="resume-skill-name">Java</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark sidebar-progress progress-bar-striped" role="progressbar" style="width: 71%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </li>
+                                    <li style="padding-top:10px;">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">More Skills</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">Microsoft Word</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">Powerpoint</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">Internet Explorer</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-light sidebar-badge">Etc.</span></li>
+                                            <!-- <li class="list-inline-item"><span class="badge badge-light sidebar-badge"></span></li> -->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class='sidebar-section sidebar-section-header'>
+                                Languages
+                            </div>
+                            <div class="sidebar-section sidebar-section-content">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="resume-skill-name">English</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark sidebar-progress progress-bar-striped" role="progressbar" style="width: 99%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="resume-skill-name">French</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark sidebar-progress progress-bar-striped" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="resume-skill-name">Mandarin</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark sidebar-progress progress-bar-striped" role="progressbar" style="width: 23%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- BEGIN MAIN RESUME BODY  -->
+
+                        <div class="col-md-9 resume-body right-corner">
+                            <div class="section-item">
+                                <div class="row section-item-description">
+                                    <div class="col-sm-8 topline">
+                                        Employer/Institution
+                                    </div>
+                                    <div class="col-sm-4 topline text-right">
+                                        City, Country
+                                    </div>
+                                </div>
+                                <div class="row section-item-description">
+                                    <div class="col-sm-8 byline">
+                                        title, division
+                                    </div>
+                                    <div class="col-sm-4 byline text-right">
+                                        2018 – Present
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text-heading">
+                                        Responsibilities:
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text-heading">
+                                        Initiatives:
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-item">
+                                <div class="row section-item-description">
+                                    <div class="col-sm-8 topline">
+                                        Employer/Institution
+                                    </div>
+                                    <div class="col-sm-4 topline text-right">
+                                        City, Country
+                                    </div>
+                                </div>
+                                <div class="row section-item-description">
+                                    <div class="col-sm-8 byline">
+                                        title, division
+                                    </div>
+                                    <div class="col-sm-4 byline text-right">
+                                        2018 – Present
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text-heading">
+                                        Responsibilities:
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text-heading">
+                                        Initiatives:
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="section-item">
+                                <div class="row section-item-description">
+                                    <div class="col-sm-8 topline">
+                                        Employer/Institution
+                                    </div>
+                                    <div class="col-sm-4 topline text-right">
+                                        City, Country
+                                    </div>
+                                </div>
+                                <div class="row section-item-description">
+                                    <div class="col-sm-8 byline">
+                                        title, division
+                                    </div>
+                                    <div class="col-sm-4 byline text-right">
+                                        2018 – Present
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text-heading">
+                                        Responsibilities:
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text-heading">
+                                        Initiatives:
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-item">
+                                <div class="row section-item-description">
+                                    <div class="col-sm-8 topline">
+                                        Employer/Institution
+                                    </div>
+                                    <div class="col-sm-4 topline text-right">
+                                        City, Country
+                                    </div>
+                                </div>
+                                <div class="row section-item-description">
+                                    <div class="col-sm-8 byline">
+                                        title, division
+                                    </div>
+                                    <div class="col-sm-4 byline text-right">
+                                        2018 – Present
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text-heading">
+                                        Responsibilities:
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text-heading">
+                                        Initiatives:
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                                <div class="row section-item-detail">
+                                    <div class="col-sm-11 detail-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius porta dui, dictum cursus purus tempus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer text-center header-background">
+            <!-- footer  -->
+            <div>
+                <a class="btn btn-lg btn-download" href="{% static 'resume\CV\MaximeGosselinCV.pdf' %}" download><i class="fa fa-download mr-2"></i>Download a copy</a>
+            </div>
+            <div class="btn-home-wrapper">
+                <a class="btn btn-lg btn-home" href="../">Home</a>
+            </div>
+        </div>
+
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

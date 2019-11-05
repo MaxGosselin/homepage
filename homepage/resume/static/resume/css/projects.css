@@ -1,0 +1,118 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-family: Overpass, Hack, monospace;
+}
+
+.corners {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.page-main {
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    margin-top: 15vh;
+    background-color: #E9EBEF;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 385px;
+}
+
+.title-box {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.project-title {
+    color: #252732;
+}
+
+#nav-tab{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.nav-link{
+    color: #3b3d48;
+}
+.nav-link:hover {
+    color: #6E8699;
+}
+#nav-tabContent{
+    padding-top: 60px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-bottom: 30px !important;
+    background-color: white;
+    font-family: Muli;
+}
+.section-title{
+    padding-bottom: 15px;
+}
+.table-box{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+.table {
+    font-size: 13px;
+}
+.winner {
+    color: gold;
+    /* font-size: 15px; */
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+.second {
+    color: silver;
+    /* font-size: 15px; */
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+.third {
+    color: #b08d57;
+    /* font-size: 15px; */
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+.recruitment {
+    margin-left: 17.5vw;
+    margin-right: 17.5vw;
+    margin-top: 35px;
+    /* margin-bottom: 50px; */
+    background-color: #E9EBEF;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.recruitment-tagline {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+.recruitment-detail {
+    padding-top: 20px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-bottom: 30px !important;
+    background-color: white;
+    font-family: Muli;
+}
+
+.btn-home-wrapper {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.btn-home {
+
+    background-color: #6e8699;
+    border-color: #6e8699;
+    color: #E9EBEF;
+}
+.btn-home:hover {
+    color: #3b3d48 !important;
+}

@@ -1,0 +1,53 @@
+{%  load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>YOUR NAME</title>
+        <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+        <link rel='stylesheet' href='https://overpass-30e2.kxcdn.com/overpass.css'>
+        <link rel="stylesheet" href="{% static 'coverpage\css\cover_style.css' %}">
+        
+        <script src="https://kit.fontawesome.com/248ac55434.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id = "rootContainer">
+            <div id="elementContainer">
+                <div id="bigName">
+                    <p class="nameTag">Your Name Here</p>
+                </div>
+                <div id="menu">
+                    <ul class="menuItems">
+                        <li class="level_1">
+                            <a class="menuItems" href="/resume/">Resume</a>
+                            <a class="menuItems" href="/resume/projects/">Projects</a>
+                            <!-- <a class="menuItems" href="mailto:<YOUR EMAIL HERE>?Subject=Reaching%20Out">Contact</a> -->
+                            <!-- <a class="menuItems" href="mailto:<YOUR EMAIL HERE>?Subject=Reaching%20Out">Contact</a> -->
+                            <a class="menuItems" href="#">Contact</a>
+                            </li>
+                        <li class="level_2">
+                            <a class="menuItems" href="/tools/">Tools</a>
+                            <a class="menuItems" href="/#/" data-toggle="tooltip" data-placement="right" title="Under Renovations!">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- </div class="graph_container">\
+                Want a cool data visualisation / live chart like the one on maxgosselin.com?
+                get in touch and we can work something out!
+            -->
+            
+            <div class="footer">
+                <div class="footer-text">
+                    Descriptive tagline about your page. This site is powered by Python.
+                </div>
+                <div class="footer-icons">
+                    <!-- YOUR INFORMATION HERE -->
+                    <a href="https://github.com/" class="footer-icons fab fa-github"></a>
+                    <a href="https://www.linkedin.com/in/" class="footer-icons fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

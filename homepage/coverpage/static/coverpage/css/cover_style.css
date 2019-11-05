@@ -1,0 +1,109 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-family: Overpass, Hack, monospace;
+}
+
+body {
+    margin: 0px;
+    background-color: #3E443F;
+    height: 100vh;
+}
+
+#rootContainer {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+#elementContainer {
+    margin-left: calc(10px + 2.5vw);
+    top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* #bigName {
+    width: 40%;
+} */
+
+.nameTag {
+    color: white;
+    font-size: calc(24px + 5vw);
+    font-style: italic;
+    font-weight: 900;
+    font: Overpass;
+    padding: 0;
+    margin: 0;
+}
+
+.menuItems {
+    color: #6d6a75;
+    text-decoration: none;
+    font-size: calc(10px + 2vw);
+    font-style: italic;
+    font-weight: 800;
+    font-family: Overpass, monospace;
+    padding: 0;
+    padding-right: 1vw;
+    margin: 0;
+    list-style-type: none;
+    display: inline;
+}
+
+a.menuItems:hover {
+    color: white;
+
+}
+
+
+
+.tooltip {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: #BFBDC1;
+}
+
+.tooltip-text {
+    font-family: inherit;
+    font-size: calc(4px + 1vw);
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* .tooltip-wrapper {
+    border-radius: 10px;
+} */
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 5vw;
+}
+.footer-text {
+    color: #D3D3D3;
+    padding: 0.5vw;
+    font-size: calc(4px + 1.15vw);
+    font-style: italic;
+    font-weight: 500;
+    font: Hack;
+    word-spacing: 0em;
+    float: left;
+}
+
+.footer-icons {
+    color: #D3D3D3;
+    text-decoration: none;
+    float: right;
+    padding: 0;
+    font-size: calc(4px + 1.65vw);
+    /* font-style: italic; */
+    font-weight: 300;
+    font-family: Hack, monospace;
+    letter-spacing: 0.65vw;
+    /* word-spacing: 0em; */
+}

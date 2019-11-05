@@ -1,0 +1,11 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-family: Overpass, Hack, monospace;
+}
+
+body {
+    margin: 0px;
+    background-color: #2e373d;    
+}
